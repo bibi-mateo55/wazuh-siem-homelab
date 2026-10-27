@@ -6,7 +6,7 @@ A self-hosted SIEM lab built on a MacBook (Apple Silicon M4) with UTM, used to l
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────────────── MacBook M4 (UTM) ────────────────────────┐
@@ -30,7 +30,7 @@ A self-hosted SIEM lab built on a MacBook (Apple Silicon M4) with UTM, used to l
 
 ---
 
-## ⚙️ Setup summary
+## Setup summary
 
 1. Created an Ubuntu Server 24.04 VM in UTM and installed the latest Wazuh release (manager, indexer and dashboard).
 2. Created a Windows 11 VM and installed the Wazuh agent, enrolling it with the manager.
@@ -39,7 +39,7 @@ A self-hosted SIEM lab built on a MacBook (Apple Silicon M4) with UTM, used to l
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 **Wazuh overview:** 1 active agent, 922 alerts in the last 24 hours (0 critical, 0 high, 506 medium, 416 low).
 
@@ -47,14 +47,14 @@ A self-hosted SIEM lab built on a MacBook (Apple Silicon M4) with UTM, used to l
 
 ---
 
-## 🧠 Lessons learned
+## Lessons learned
 
 - **OS version compatibility matters.** I first tried the newest Ubuntu release (26.04), but Wazuh didn't behave as expected on it. Switching to **Ubuntu 24.04 LTS** solved it. Takeaway: always check the vendor's supported platforms before deploying, the same way an organisation should validate compatibility before rolling out a security tool.
 - **Volume ≠ insight.** With just one endpoint, the dashboard registered **922 alerts in 24 hours** (506 medium, 416 low, 0 high/critical). Most are routine events and configuration checks, not attacks. The real skill is triage: knowing which alerts matter and tuning out noise. The next step is generating real attack activity to see what *high-severity* detections look like (see roadmap).
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [x] Deploy Wazuh server on Ubuntu 24.04
 - [x] Enrol a Windows 11 endpoint with the agent
