@@ -65,8 +65,4 @@ A self-hosted SIEM lab built on a MacBook (Apple Silicon M4) with UTM, used to l
 
 ---
 
-## 📚 References
 
-- [Wazuh documentation](https://documentation.wazuh.com/)
-- [MITRE ATT&CK](https://attack.mitre.org/)
-# wazuh-siem-homelab
