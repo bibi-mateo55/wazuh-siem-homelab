@@ -93,10 +93,3 @@ I enabled **File Integrity Monitoring (FIM)** in real-time mode on a watched fol
 ---
 
 
-
----
-
-## 📚 References
-
-- [Wazuh documentation](https://documentation.wazuh.com/)
-- [MITRE ATT&CK](https://attack.mitre.org/)
